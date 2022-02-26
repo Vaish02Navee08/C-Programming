@@ -1,0 +1,79 @@
+#include <stdio.h>
+#include <string.h>
+#include<conio.h>
+
+void pallindrome(char string1[])
+{
+	int i, length;
+	int flag = 0;
+
+	length = strlen(string1);
+
+	for(i=0;i < length ;i++)
+	{
+		if(string1[i] != string1[length-i-1])
+		{
+			flag = 1;
+			break;
+		}
+	}
+
+	if (flag)
+	{
+		printf("\n\t%s is not a palindrome", string1);
+	}
+	else
+	{
+		printf("\n\t%s is a palindrome", string1);
+	}
+}
+
+int main()
+{
+	char str[20];
+	int agn;
+	void pallindrome(char []);
+	clrscr();
+
+	Label:
+
+	printf("\n\tEnter a string:");
+	scanf("%s", str);
+
+	pallindrome(str);
+
+	printf("\n\tDoYou Want To Redo The Test?\n\t");
+	printf("\n\t1.YES\n\t2.NO\n\t");
+	scanf("%d",&agn);
+	if(agn==1)
+		goto Label;
+getch();
+return 0;
+}
+/**Output-
+
+        Enter a string:haah                                                     
+                                                                                
+        haah is a palindrome                                                    
+        DoYou Want To Redo The Test?                                            
+                                                                                
+        1.YES                                                                   
+        2.NO                                                                    
+	2
+**/
+
+
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
